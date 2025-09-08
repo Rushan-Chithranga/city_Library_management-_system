@@ -1,0 +1,20 @@
+B001,Python Programming,John Smith,Programming,Available
+B002,Java Fundamentals,Mary Johnson,Programming,Available
+B003,Data Structures,Alan Turing,Computer Science,Available
+B004,Database Systems,Edgar Codd,Databases,Available
+B005,Networking Basics,Andrew Tanenbaum,Networking,Available
+B006,Artificial Intelligence,Stuart Russell,AI,Available
+B007,Machine Learning,Tom Mitchell,AI,Available
+B008,Operating Systems,Abraham Silberschatz,Systems,Available
+B009,Web Development,Tim Berners-Lee,Web,Available
+B010,Software Engineering,Ian Sommerville,Software,Available
+B011,C++ Primer,Stanley Lippman,Programming,Available
+B012,JavaScript Guide,Brendan Eich,Web,Available
+B013,HTML & CSS,Jon Duckett,Web,Available
+B014,PHP & MySQL,Luke Welling,Databases,Available
+B015,Cloud Computing,Thomas Erl,Cloud,Available
+B016,Cyber Security,William Stallings,Security,Available
+B017,Big Data Analytics,Viktor Mayer,Data,Available
+B018,Algorithms,Robert Sedgewick,Computer Science,Available
+B019,Computer Graphics,James Foley,Graphics,Available
+B020,Deep Learning,Ian Goodfellow,AI,Available
