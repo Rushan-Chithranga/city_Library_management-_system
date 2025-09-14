@@ -1,8 +1,8 @@
-from helpers import read_file
+from helpers import read_csv
 
 def login():
-    users = read_file("users.txt")
-    creds = {u.split(",")[0]: u.split(",")[1] for u in users if "," in u}
+    users = read_csv("users.csv")
+    creds = {row[0]: row[1] for row in users if len(row) >= 2}
     for _ in range(3):
         uname = input("Enter username: ")
         pwd = input("Enter password: ")

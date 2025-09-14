@@ -1,4 +1,4 @@
-from helpers import read_file, append_file
+from helpers import read_csv, append_csv
 
 def add_member():
     member_id = input("Enter Member ID: ")
@@ -6,12 +6,12 @@ def add_member():
     lname = input("Last Name: ")
     dob = input("Date of Birth (YYYY-MM-DD): ")
     contact = input("Contact Number: ")
-    line = f"{member_id},{fname},{lname},{dob},{contact}"
-    append_file("members.txt", line)
+    row = [member_id, fname, lname, dob, contact]
+    append_csv("members.csv", row)
     print("Member registered.\n")
 
 def display_members():
-    members = read_file("members.txt")
+    members = read_csv("members.csv")
     print("\n--- Members List ---")
     for m in members:
         print(m)
@@ -19,8 +19,8 @@ def display_members():
 
 def search_member():
     keyword = input("Enter member name to search: ").lower()
-    members = read_file("members.txt")
-    results = [m for m in members if keyword in m.lower()]
+    members = read_csv("members.csv")
+    results = [m for m in members if any(keyword in str(x).lower() for x in m)]
     print("\n--- Search Results ---")
     for r in results:
         print(r)

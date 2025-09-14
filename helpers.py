@@ -1,15 +1,18 @@
+import csv
 import os
 
-def read_file(filename):
+def read_csv(filename):
     if not os.path.exists(filename):
         open(filename, "w").close()
-    with open(filename, "r") as f:
-        return [line.strip() for line in f.readlines() if line.strip()]
+    with open(filename, newline="") as f:
+        return list(csv.reader(f))
 
-def write_file(filename, lines):
-    with open(filename, "w") as f:
-        f.write("\n".join(lines) + ("\n" if lines else ""))
+def write_csv(filename, rows):
+    with open(filename, "w", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerows(rows)
 
-def append_file(filename, line):
-    with open(filename, "a") as f:
-        f.write(line + "\n")
+def append_csv(filename, row):
+    with open(filename, "a", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(row)
