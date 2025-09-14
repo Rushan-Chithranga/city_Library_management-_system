@@ -7,7 +7,7 @@ def add_book():
     category = input("Enter Category: ")
     line = f"{book_id},{title},{author},{category},Available"
     append_file("books.txt", line)
-    print("✅ Book added successfully.\n")
+    print("Book added successfully.\n")
 
 def display_books():
     books = read_file("books.txt")

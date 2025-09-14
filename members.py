@@ -8,7 +8,7 @@ def add_member():
     contact = input("Contact Number: ")
     line = f"{member_id},{fname},{lname},{dob},{contact}"
     append_file("members.txt", line)
-    print("✅ Member registered.\n")
+    print("Member registered.\n")
 
 def display_members():
     members = read_file("members.txt")

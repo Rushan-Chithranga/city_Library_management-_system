@@ -42,7 +42,7 @@ def main_menu():
             print("Logging out... Goodbye!")
             break
         else:
-            print("❌ Invalid choice. Try again.\n")
+            print("Invalid choice. Try again.\n")
 
 if __name__ == "__main__":
     print("===== Welcome to City Library Management System =====")

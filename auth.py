@@ -7,8 +7,8 @@ def login():
         uname = input("Enter username: ")
         pwd = input("Enter password: ")
         if creds.get(uname) == pwd:
-            print("✅ Login successful!\n")
+            print("Login successful!\n")
             return True
         else:
-            print("❌ Invalid credentials.")
+            print("Invalid credentials.")
     return False

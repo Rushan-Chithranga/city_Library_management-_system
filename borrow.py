@@ -16,11 +16,11 @@ def borrow_book():
             borrow_date = datetime.date.today()
             due_date = borrow_date + datetime.timedelta(days=14)
             append_file("borrow.txt", f"{member_id},{book_id},{borrow_date},{due_date},Borrowed")
-            print(f"✅ Book borrowed successfully! Due on {due_date}")
+            print(f"Book borrowed successfully! Due on {due_date}")
         updated_books.append(",".join(parts))
     write_file("books.txt", updated_books)
     if not found:
-        print("❌ Book not available.\n")
+        print("Book not available.\n")
 
 def return_book():
     member_id = input("Enter Member ID: ")
@@ -47,6 +47,6 @@ def return_book():
     write_file("books.txt", updated_books)
 
     if returned:
-        print("✅ Book returned successfully.\n")
+        print("Book returned successfully.\n")
     else:
-        print("❌ No active borrowing found.\n")
+        print("No active borrowing found.\n")
